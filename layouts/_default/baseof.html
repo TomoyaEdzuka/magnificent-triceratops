@@ -22,11 +22,11 @@
           {{ partial "header.html" . }}
           <div id="content" class="site-content">
             <div class="inner">
-                           <div>
+              <main id="main" class="site-main">
+                    <div>
                   <script async src="https://cse.google.com/cse.js?cx=017076577764705468622:7i1cmxyfgmx"></script>
                   <div class="gcse-search"></div>
-            </div>
-              <main id="main" class="site-main">
+                    </div>
                 {{ block "content" . }}{{ end }}
               </main><!-- .site-main -->
               {{ partial "footer.html" . }}
