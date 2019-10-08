@@ -20,12 +20,12 @@
         
         <div id="page" class="site style-{{ .Site.Params.layout_style }} palette-{{ .Site.Params.palette }}">
           {{ partial "header.html" . }}
-            <div>
+          <div id="content" class="site-content">
+            <div class="inner">
+                           <div>
                   <script async src="https://cse.google.com/cse.js?cx=017076577764705468622:7i1cmxyfgmx"></script>
                   <div class="gcse-search"></div>
             </div>
-          <div id="content" class="site-content">
-            <div class="inner">
               <main id="main" class="site-main">
                 {{ block "content" . }}{{ end }}
               </main><!-- .site-main -->
